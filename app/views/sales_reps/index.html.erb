@@ -1,0 +1,23 @@
+
+
+<h1>Sales Reps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Total Sales</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rep.each do |rep| %>
+      <tr>
+        <td><%= rep.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
